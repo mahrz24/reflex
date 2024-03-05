@@ -66,8 +66,8 @@ class Config(Base):
     event_namespace: Optional[str]
     frontend_packages: List[str]
     rxdeploy_url: Optional[str]
-    cp_backend_url: str
-    cp_web_url: str
+    # cp_backend_url: str
+    # cp_web_url: str
     username: Optional[str]
     gunicorn_worker_class: str
 
@@ -93,8 +93,8 @@ class Config(Base):
         event_namespace: Optional[str] = None,
         frontend_packages: Optional[List[str]] = None,
         rxdeploy_url: Optional[str] = None,
-        cp_backend_url: Optional[str] = None,
-        cp_web_url: Optional[str] = None,
+        #cp_backend_url: Optional[str] = None,
+        #cp_web_url: Optional[str] = None,
         username: Optional[str] = None,
         gunicorn_worker_class: Optional[str] = None,
         **kwargs
