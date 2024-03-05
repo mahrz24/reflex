@@ -217,5 +217,5 @@ def __getattr__(name: str) -> Type:
         return (
             getattr(module, name) if name != _MAPPING[name].rsplit(".")[-1] else module
         )
-    except ModuleNotFoundError:
-        raise AttributeError(f"module 'reflex' has no attribute {name}") from None
+    except ModuleNotFoundError as e:
+        raise AttributeError(f"module 'reflex' has no attribute {name}") from e
