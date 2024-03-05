@@ -512,13 +512,13 @@ test = ["pytest (>=6)"]
 
 [[package]]
 name = "fastapi"
-version = "0.110.0"
+version = "0.109.2"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "fastapi-0.110.0-py3-none-any.whl", hash = "sha256:87a1f6fb632a218222c5984be540055346a8f5d8a68e8f6fb647b1dc9934de4b"},
-    {file = "fastapi-0.110.0.tar.gz", hash = "sha256:266775f0dcc95af9d3ef39bad55cff525329a931d5fd51930aadd4f428bf7ff3"},
+    {file = "fastapi-0.109.2-py3-none-any.whl", hash = "sha256:2c9bab24667293b501cad8dd388c05240c850b58ec5876ee3283c47d6e1e3a4d"},
+    {file = "fastapi-0.109.2.tar.gz", hash = "sha256:f3817eac96fe4f65a2ebb4baa000f394e55f5fccdaf7f75250804bc58f354f73"},
 ]
 
 [package.dependencies]
@@ -1252,13 +1252,13 @@ xmp = ["defusedxml"]
 
 [[package]]
 name = "pipdeptree"
-version = "2.16.0"
+version = "2.16.1"
 description = "Command line utility to show dependency tree of packages."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pipdeptree-2.16.0-py3-none-any.whl", hash = "sha256:77b5f8a942eaea83599b76459ad8ff908e60065a3055e09d49dcab3eb0077f3c"},
-    {file = "pipdeptree-2.16.0.tar.gz", hash = "sha256:45b045a539a87dde690596f4293ac7af7c6a1cd0a3480b06de9d33046564d17b"},
+    {file = "pipdeptree-2.16.1-py3-none-any.whl", hash = "sha256:7131023df30220678b6a42c7372ce07453b39e0b3df935b129e832f0acf96b8a"},
+    {file = "pipdeptree-2.16.1.tar.gz", hash = "sha256:f1ca64ce4aff9373613711048b9c4e8106ad955dea0dd962b7974fa168d7650a"},
 ]
 
 [package.extras]
@@ -2223,24 +2223,6 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
 name = "uvicorn"
-version = "0.20.0"
-description = "The lightning-fast ASGI server."
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "uvicorn-0.20.0-py3-none-any.whl", hash = "sha256:c3ed1598a5668208723f2bb49336f4509424ad198d6ab2615b7783db58d919fd"},
-    {file = "uvicorn-0.20.0.tar.gz", hash = "sha256:a4e12017b940247f836bc90b72e725d7dfd0c8ed1c51eb365f5ba30d9f5127d8"},
-]
-
-[package.dependencies]
-click = ">=7.0"
-h11 = ">=0.8"
-
-[package.extras]
-standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)", "pyyaml (>=5.1)", "uvloop (>=0.14.0,!=0.15.0,!=0.15.1)", "watchfiles (>=0.13)", "websockets (>=10.4)"]
-
-[[package]]
-name = "uvicorn"
 version = "0.27.1"
 description = "The lightning-fast ASGI server."
 optional = false
@@ -2253,6 +2235,7 @@ files = [
 [package.dependencies]
 click = ">=7.0"
 h11 = ">=0.8"
+typing-extensions = {version = ">=4.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
 standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)", "pyyaml (>=5.1)", "uvloop (>=0.14.0,!=0.15.0,!=0.15.1)", "watchfiles (>=0.13)", "websockets (>=10.4)"]
@@ -2625,4 +2608,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "858a0192cb7009b35be1298ad59d0a56241f68c9af2cbff8986dbcadbbef844c"
+content-hash = "d78ca7f9a3294bb1b7b4ad61f4c1fa9e37f64ec801ece93d83e09c929d135b9d"
